@@ -10,11 +10,11 @@ Even when DSH runs on a remote server, dropping a file works exactly like it doe
 
 [简体中文](README.md)&ensp;·&ensp;[AI version](README.ai.md)&ensp;·&ensp;[Changelog](CHANGELOG.md)
 
-[![listed on awesome dsh plugin](https://awesome-dsh-plugin.com/badge.svg)](https://awesome-dsh-plugin.com/p/demacia1314/dsh-airdrop/)
-![DSH](https://img.shields.io/badge/DSH-0.1.1--rc.2-4c8dff)
+[![listed on awesome dsh plugin](https://awesome-dsh-plugin.com/badge.svg)](https://awesome-dsh-plugin.com/p/hasan-aghayev/dsh-airdrop/)
+![DSH](https://img.shields.io/badge/DSH-0.2.1--rc.2-4c8dff)
 ![License](https://img.shields.io/badge/license-MIT-3fb950)
 
-<img src="https://raw.githubusercontent.com/demacia1314/dsh-airdrop/main/assets/in-chat.png" alt="The attachment goes out with the message and the agent reads it" width="880">
+<img src="https://raw.githubusercontent.com/hasan-aghayev/dsh-airdrop/main/assets/in-chat.png" alt="The attachment goes out with the message and the agent reads it" width="880">
 
 </div>
 
@@ -31,7 +31,7 @@ Even when DSH runs on a remote server, dropping a file works exactly like it doe
 
 | Drop it in | Send it off | Preview anytime |
 | :---: | :---: | :---: |
-| <img src="https://raw.githubusercontent.com/demacia1314/dsh-airdrop/main/assets/drop-in.png" alt="A card appears the moment you drop a file"> | <img src="https://raw.githubusercontent.com/demacia1314/dsh-airdrop/main/assets/in-chat.png" alt="The attachment rides along with the message"> | <img src="https://raw.githubusercontent.com/demacia1314/dsh-airdrop/main/assets/preview-modal.png" alt="In-browser attachment preview"> |
+| <img src="https://raw.githubusercontent.com/hasan-aghayev/dsh-airdrop/main/assets/drop-in.png" alt="A card appears the moment you drop a file"> | <img src="https://raw.githubusercontent.com/hasan-aghayev/dsh-airdrop/main/assets/in-chat.png" alt="The attachment rides along with the message"> | <img src="https://raw.githubusercontent.com/hasan-aghayev/dsh-airdrop/main/assets/preview-modal.png" alt="In-browser attachment preview"> |
 | Drop anywhere — a card appears instantly | The attachment rides with your message, and the agent reads it | One click to preview, with download |
 
 ## 🚀 Up and running in three minutes
@@ -41,7 +41,7 @@ dsh plugin --profile web add dsh-airdrop
 dsh web
 ```
 
-> Restart `dsh web` after installing, and make sure the session has a workspace directory. Naming note: as of 0.2.1 the package is `dsh-airdrop`, matching the repo (the old `dsh-universal-attachments` name is retired); existing sessions' attachment cards and on-disk data keep loading unchanged.
+> Version 0.2.2 supports DSH `>=0.2.1-rc.2 <0.2.2`. Restart `dsh web` after installing, and make sure the session has a workspace directory. Naming note: as of 0.2.1 the package is `dsh-airdrop`, matching the repo (the old `dsh-universal-attachments` name is retired); existing sessions' attachment cards and on-disk data keep loading unchanged.
 
 <details>
 <summary>Prefer building from source?</summary>
@@ -50,7 +50,7 @@ dsh web
 pnpm install
 pnpm run build
 pnpm pack
-dsh plugin --profile web add .\dsh-airdrop-0.2.1.tgz
+dsh plugin --profile web add .\dsh-airdrop-0.2.2.tgz
 ```
 
 </details>

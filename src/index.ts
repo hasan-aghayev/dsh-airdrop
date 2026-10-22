@@ -1110,7 +1110,7 @@ function parameter(name: string, schema: z.ZodType, symbol = name) {
     codec: {
       mode: 'strict' as const,
       typeSymbol: `dsh-airdrop#${symbol}`,
-      schema,
+      create: () => schema,
     },
   }
 }
@@ -1126,7 +1126,7 @@ function invocation(method: string, parameters: readonly ReturnType<typeof param
     result: {
       mode: 'strict' as const,
       typeSymbol: `dsh-airdrop#${resultSymbol}`,
-      schema,
+      create: () => schema,
     },
   }
 }

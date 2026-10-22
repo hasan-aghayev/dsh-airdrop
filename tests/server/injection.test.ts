@@ -47,7 +47,7 @@ describe('attachment pre-step injection', () => {
   it('inserts once immediately before the first claimed human message', () => {
     const pluginContext = createUserMessage({
       content: [{ type: 'text', text: 'existing context' }],
-      source: { kind: 'plugin', plugin: 'other' },
+      source: { kind: 'dsh-airdrop', form: 'notice', summary: 'other attachment context', batchId: 'other', historyHandledBy: 'user-message' },
     })
     const human = createUserMessage({
       content: [{ type: 'text', text: 'Please inspect these.' }],
@@ -66,7 +66,7 @@ describe('attachment pre-step injection', () => {
   it('waits when a tool-only step has no claimed human message', () => {
     const pluginContext = createUserMessage({
       content: [{ type: 'text', text: 'tool continuation context' }],
-      source: { kind: 'plugin', plugin: 'other' },
+      source: { kind: 'dsh-airdrop', form: 'notice', summary: 'other attachment context', batchId: 'other', historyHandledBy: 'user-message' },
     })
     const attachment = createAttachmentMessage('claim-2', [root()])
     expect(insertAttachmentMessageOnce([pluginContext], [pluginContext], attachment, 'claim-2').inserted).toBe(false)
@@ -89,7 +89,7 @@ describe('attachment pre-step injection', () => {
   it('skips claimed plugin context and targets the first claimed human message', () => {
     const pluginContext = createUserMessage({
       content: [{ type: 'text', text: 'claimed plugin context' }],
-      source: { kind: 'plugin', plugin: 'other' },
+      source: { kind: 'dsh-airdrop', form: 'notice', summary: 'other attachment context', batchId: 'other', historyHandledBy: 'user-message' },
     })
     const human = createUserMessage({
       content: [{ type: 'text', text: 'claimed prompt' }],

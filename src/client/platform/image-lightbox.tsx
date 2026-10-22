@@ -17,7 +17,7 @@
 
 import { useEffect, useRef } from 'react'
 import { createPortal } from 'react-dom'
-import { IconCloseOutline16 } from '@deepseek-ai/dsh-client-ui-primitives'
+import { IconCloseOutlineMedium } from '@deepseek-ai/dsh-client-ui-primitives'
 
 /** Lightbox strings the owner resolves from its own locale namespace. */
 export interface ImageLightboxLabels {
@@ -72,7 +72,7 @@ export function ImageLightbox({ src, alt, labels, onClose }: {
       <div className="dua-lightbox-mask" aria-hidden="true" onMouseDown={onClose} />
       <img className="dua-lightbox-image" src={src} alt={alt} />
       <button ref={closeRef} type="button" className="dua-lightbox-close" aria-label={labels.close} onClick={onClose}>
-        <IconCloseOutline16 size={16} />
+        <IconCloseOutlineMedium size={16} />
       </button>
     </div>,
     document.body,

@@ -10,11 +10,11 @@
 
 [English](README.en.md)&ensp;·&ensp;[AI 版本](README.ai.md)&ensp;·&ensp;[更新日志](CHANGELOG.md)
 
-[![listed on awesome dsh plugin](https://awesome-dsh-plugin.com/badge.svg)](https://awesome-dsh-plugin.com/p/demacia1314/dsh-airdrop/)
-![DSH](https://img.shields.io/badge/DSH-0.1.1--rc.2-4c8dff)
+[![listed on awesome dsh plugin](https://awesome-dsh-plugin.com/badge.svg)](https://awesome-dsh-plugin.com/p/hasan-aghayev/dsh-airdrop/)
+![DSH](https://img.shields.io/badge/DSH-0.2.1--rc.2-4c8dff)
 ![License](https://img.shields.io/badge/license-MIT-3fb950)
 
-<img src="https://raw.githubusercontent.com/demacia1314/dsh-airdrop/main/assets/in-chat.png" alt="附件随消息发出,AI 直接读取文件内容" width="880">
+<img src="https://raw.githubusercontent.com/hasan-aghayev/dsh-airdrop/main/assets/in-chat.png" alt="附件随消息发出,AI 直接读取文件内容" width="880">
 
 </div>
 
@@ -31,7 +31,7 @@
 
 | 拖进来 | 发出去 | 随时预览 |
 | :---: | :---: | :---: |
-| <img src="https://raw.githubusercontent.com/demacia1314/dsh-airdrop/main/assets/drop-in.png" alt="拖入文件后显示附件卡片"> | <img src="https://raw.githubusercontent.com/demacia1314/dsh-airdrop/main/assets/in-chat.png" alt="附件随消息发出,AI 读取内容"> | <img src="https://raw.githubusercontent.com/demacia1314/dsh-airdrop/main/assets/preview-modal.png" alt="浏览器内预览附件"> |
+| <img src="https://raw.githubusercontent.com/hasan-aghayev/dsh-airdrop/main/assets/drop-in.png" alt="拖入文件后显示附件卡片"> | <img src="https://raw.githubusercontent.com/hasan-aghayev/dsh-airdrop/main/assets/in-chat.png" alt="附件随消息发出,AI 读取内容"> | <img src="https://raw.githubusercontent.com/hasan-aghayev/dsh-airdrop/main/assets/preview-modal.png" alt="浏览器内预览附件"> |
 | 拖到窗口任意位置,卡片立刻出现 | 附件跟着消息走,AI 直接读内容 | 点开就能预览,还能下载 |
 
 ## 🚀 三分钟上手
@@ -41,7 +41,7 @@ dsh plugin --profile web add dsh-airdrop
 dsh web
 ```
 
-> 重启 `dsh web` 生效;会话需要有工作区目录。从 0.2.1 起包名与仓库统一为 `dsh-airdrop`(旧名 `dsh-universal-attachments` 已停用);历史会话里的附件卡片与磁盘数据仍按旧格式读取,无需迁移。
+> 0.2.2 支持 DSH `>=0.2.1-rc.2 <0.2.2`。重启 `dsh web` 生效;会话需要有工作区目录。从 0.2.1 起包名与仓库统一为 `dsh-airdrop`(旧名 `dsh-universal-attachments` 已停用);历史会话里的附件卡片与磁盘数据仍按旧格式读取,无需迁移。
 
 <details>
 <summary>想从源码构建?</summary>
@@ -50,7 +50,7 @@ dsh web
 pnpm install
 pnpm run build
 pnpm pack
-dsh plugin --profile web add .\dsh-airdrop-0.2.1.tgz
+dsh plugin --profile web add .\dsh-airdrop-0.2.2.tgz
 ```
 
 </details>

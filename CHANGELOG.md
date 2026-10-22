@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.2.2 — 2026-10-22
+
+- Migrate to DeepSeek Harness `0.2.1-rc.2` and declare the supported host range as `>=0.2.1-rc.2 <0.2.2`.
+- Update DSH UI primitive icon imports from the removed numeric-size exports to the current Medium-weight exports.
+- Replace the removed generic `plugin` message-source emission with the producer-owned `dsh-airdrop` source while continuing to read legacy persisted sources.
+- Migrate all nine Typert Remote codecs to the new `create()` schema-factory contract required by the DSH 0.2.1 loader.
+- Activation-test the packed plugin in an isolated DSH `0.2.1-rc.2` Web profile; all 51 functional tests and artifact verification pass.
+
 ## 0.2.1 — 2026-09-08
 
 - Renamed: the package is now **`dsh-airdrop`**, matching the repository name (was `dsh-universal-attachments`). Session-log manifest fields, the plugin message source name, and the on-disk `.dsh/uploads/.universal-attachments` metadata directory keep being read for backward compatibility; new writes use the airdrop spelling.
